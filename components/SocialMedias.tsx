@@ -5,7 +5,7 @@ export function LinkedIn(){
         <a
             href="https://ro.linkedin.com/in/andrei-dumitru-6a1a08363"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             >
                 <FaLinkedin size={32} />
         </a>
@@ -17,7 +17,7 @@ export function Slack(){
         <a
             href="https://hackclub.enterprise.slack.com/team/U0A531VD30C"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
         >
             <FaSlack size={32} />
         </a>
@@ -29,7 +29,8 @@ export function Github({url}: {url: string}) {
         <a
             href={url}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
+            aria-label="Link to Github"
         >
             <FaGithub size={32} />
         </a>
@@ -41,7 +42,7 @@ export function Email(){
         <a
             href="mailto:contact@silentlab.work"
             target="_blank"
-            rel="noopener noreferrer"
+            rel=" noopener noreferrer"
         >
             <FaEnvelope size={32} />
         </a>
