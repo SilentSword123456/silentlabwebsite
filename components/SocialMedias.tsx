@@ -3,7 +3,8 @@ import { FaLinkedin, FaSlack, FaGithub, FaEnvelope, FaGlobe } from 'react-icons/
 export function LinkedIn(){
     return (
         <a
-            href="https://ro.linkedin.com/in/andrei-dumitru-6a1a08363"
+            href="www.linkedin.com/in/
+SilentSword"
             target="_blank"
             rel="nofollow noopener noreferrer"
             >
