@@ -1,4 +1,4 @@
-import { FaLinkedin, FaSlack } from 'react-icons/fa';
+import { FaLinkedin, FaSlack, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export function LinkedIn(){
     return (
@@ -20,6 +20,30 @@ export function Slack(){
             rel="noopener noreferrer"
         >
             <FaSlack size={32} />
+        </a>
+    )
+}
+
+export function Github(){
+    return (
+        <a
+            href="https://github.com/SilentSword123456"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <FaGithub size={32} />
+        </a>
+    )
+}
+
+export function Email(){
+    return (
+        <a
+            href="mailto:contact@silentlab.work"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <FaEnvelope size={32} />
         </a>
     )
 }

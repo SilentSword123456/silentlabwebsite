@@ -1,4 +1,4 @@
-import { LinkedIn, Slack } from "@/components/SocialMedia";
+import { LinkedIn, Slack, Github, Email } from "@/components/SocialMedia";
 import styles from './page.module.css'
 
 function Page() {
@@ -9,6 +9,8 @@ function Page() {
             <div className={styles.socialsGrid}>
                 <LinkedIn />
                 <Slack />
+                <Github />
+                <Email />
             </div>
         </main>
     )
