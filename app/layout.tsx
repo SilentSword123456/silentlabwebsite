@@ -22,6 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <main style={{ paddingTop: "72px", paddingLeft: "140px", paddingRight: "140px" }}>
                 {children}
             </main>
+            <Analytics />
+            <SpeedInsights />
         </body>
         </html>
     );
