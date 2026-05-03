@@ -1,11 +1,6 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-:root {
     --bg: #000000;
     --surface: #111111;
     --border: #ffffff10;
@@ -20,23 +15,10 @@ body {
     color: var(--text);
 }
 
-.tesseract-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
-    background: var(--bg);
-}
-
-.tesseract-container canvas {
-    display: block;
-}
-
 .nav-button {
     background: none;
     border: none;
     color: var(--text-dim);
-    font-family: var(--font);
     font-size: 0.9rem;
     cursor: pointer;
     position: relative;

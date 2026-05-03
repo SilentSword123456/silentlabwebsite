@@ -1,0 +1,11 @@
+.tesseractContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    background: var(--bg);
+}
+
+.tesseractContainer canvas {
+    display: block;
+}

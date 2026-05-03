@@ -1,22 +1,21 @@
-"use client";
+'use client';
 
-import {useState} from "react";
+import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 function Navbar(){
-    const titles = ["Homepage", "What I'm proud of", "Contact"]
-    const [active, setActive] = useState<string>(titles[0])
+    const pathname = usePathname();
 
     return (
         <nav className="navbar">
-            {titles.map((title) => (
-                <button
-                    className={`nav-button ${active === title ? 'active' : ''}`}
-                    key={title}
-                    onClick={() => setActive(title)}
-                >
-                    {title}
-                </button>
-            ))}
+            <Link
+                className={`nav-button ${pathname === '/' ? 'active' : ''}`}
+                href="/"
+            >Home</Link>
+            <Link
+                className={`nav-button ${pathname === '/contact' ? 'active' : ''}`}
+                href="/contact"
+            >Contact</Link>
         </nav>
     )
 }
