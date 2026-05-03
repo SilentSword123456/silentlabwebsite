@@ -1,4 +1,4 @@
-import { FaLinkedin, FaSlack, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaSlack, FaGithub, FaEnvelope, FaGlobe } from 'react-icons/fa';
 
 export function LinkedIn(){
     return (
@@ -24,10 +24,10 @@ export function Slack(){
     )
 }
 
-export function Github(){
+export function Github({url}: {url: string}) {
     return (
         <a
-            href="https://github.com/SilentSword123456"
+            href={url}
             target="_blank"
             rel="noopener noreferrer"
         >
@@ -44,6 +44,18 @@ export function Email(){
             rel="noopener noreferrer"
         >
             <FaEnvelope size={32} />
+        </a>
+    )
+}
+
+export function CustomSite({url}: {url: string}) {
+    return (
+        <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <FaGlobe size={32} />
         </a>
     )
 }

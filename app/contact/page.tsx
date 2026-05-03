@@ -1,4 +1,4 @@
-import { LinkedIn, Github, Email } from "@/components/SocialMedia";
+import { LinkedIn, Github, Email } from "../../components/SocialMedias";
 import styles from './page.module.css'
 
 function Page() {
@@ -8,7 +8,7 @@ function Page() {
             <p>You can reach me through any of the following platforms</p>
             <div className={styles.socialsGrid}>
                 <LinkedIn />
-                <Github />
+                <Github url={"https://github.com/SilentSword123456"}/>
                 <Email />
             </div>
         </main>
