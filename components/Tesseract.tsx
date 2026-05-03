@@ -7,7 +7,12 @@ import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
 
-function Tesseract({size=400}: {size?: number}) {
+function Tesseract({ isVisible, size = 400 }: { isVisible: boolean, size?: number }) {
+    const isVisibleRef = useRef<boolean>(isVisible);
+
+    useEffect(() => {
+        isVisibleRef.current = isVisible
+    }, [isVisible])
 
     function projectTo3D(x: number, y: number, z: number,w: number) {
         const d = 2
@@ -125,6 +130,8 @@ function Tesseract({size=400}: {size?: number}) {
 
         function animate() {
             requestAnimationFrame(animate)
+            if(!isVisibleRef.current)
+                return
             angle += 0.005
 
             if(angle>=360) {

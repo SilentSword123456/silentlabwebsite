@@ -13,6 +13,10 @@ function Navbar(){
                 href="/"
             >Home</Link>
             <Link
+                className={`nav-button ${pathname === '/projects' ? 'active' : ''}`}
+                href="/projects"
+            >What I'm proud of</Link>
+            <Link
                 className={`nav-button ${pathname === '/contact' ? 'active' : ''}`}
                 href="/contact"
             >Contact</Link>
