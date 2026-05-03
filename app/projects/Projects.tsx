@@ -20,7 +20,9 @@ export function MineGuardian(){
             <Image src={"/MineGuardian.png"}
                    alt={"MineGuardian logo"}
                    width={400}
-                   height={200} />
+                   height={200}
+                   style={{ mixBlendMode: 'lighten' }}
+            />
             <h2>MineGuardian</h2>
             <p>An administration tool for Minecraft Servers that automates all of the slow manual processes such as installing, connecting to the console, hosting, and more</p>
             <div className={styles.tags}>

@@ -1,4 +1,4 @@
-import { LinkedIn, Github, Email } from "../../components/SocialMedias";
+import { LinkedIn, Github, Email } from "@/components/SocialMedias";
 import styles from './page.module.css'
 
 function Page() {
