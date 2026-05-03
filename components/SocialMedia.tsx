@@ -1,6 +1,6 @@
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaSlack } from 'react-icons/fa';
 
-function LinkedIn(){
+export function LinkedIn(){
     return (
         <a
             href="https://ro.linkedin.com/in/andrei-dumitru-6a1a08363"
@@ -12,4 +12,14 @@ function LinkedIn(){
     )
 }
 
-export default LinkedIn;
+export function Slack(){
+    return (
+        <a
+            href="https://hackclub.enterprise.slack.com/team/U0A531VD30C"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <FaSlack size={32} />
+        </a>
+    )
+}

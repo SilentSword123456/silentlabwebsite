@@ -72,3 +72,18 @@ body {
     top: 0;
     width: 100%;
 }
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.subtitle h1 {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.subtitle p {
+    color: var(--text-dim);
+}
