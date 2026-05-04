@@ -3,7 +3,7 @@
 export default function Home() {
     return (
         <div>
-            Hi
+            I build apps that solve problems. And look good doing it.
         </div>
     )
 }
