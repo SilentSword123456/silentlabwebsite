@@ -1,3 +1,4 @@
+import Tesseract from "@/components/Tesseract";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             textAlign: "center",
             marginTop: "-400px",
         }}>
+            <Tesseract />
             <h1 style={{ fontSize: "2rem", color: "var(--accent)", marginBottom: "0.5rem" }}>
                 Andrei Dumitru
             </h1>
