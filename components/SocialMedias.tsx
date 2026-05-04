@@ -4,7 +4,7 @@ export function LinkedIn(){
     return (
         <a
             href="www.linkedin.com/in/
-SilentSword"
+silentsword"
             target="_blank"
             rel="nofollow noopener noreferrer"
             >
