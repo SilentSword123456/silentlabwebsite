@@ -9,7 +9,7 @@ export default function Home() {
             </div>
             <h1 className={styles.name}>Andrei Dumitru</h1>
             <p className={styles.tagline}>
-                I build apps that solve problems. And look good doing it.
+                High-school student, pro programmer and I love working on new projects
             </p>
         </div>
     );
