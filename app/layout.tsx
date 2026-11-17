@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "SilentLab",
+    title: "Andrei's Site",
     icons: { icon: "/favicon.svg" },
 };
 
