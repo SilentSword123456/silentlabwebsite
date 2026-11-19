@@ -9,6 +9,7 @@
     text-align: center;
     gap: 0;
     padding-bottom: 15vh;
+    pointer-events: none;
 }
 
 .tesseract {
@@ -33,12 +34,27 @@
 }
 
 .tagline {
+    position: relative;
+    z-index: 10;
     font-size: 0.9rem;
     color: var(--text-dim);
     margin: 0.75rem 0 0;
     opacity: 0;
     animation: slideUp 0.5s ease forwards;
     animation-delay: 0.7s;
+}
+
+.favoriteColorBtn {
+    color: var(--bg);
+    background: orange;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.favoriteColorBtn:hover {
+    color: orange;
+    background: var(--bg);
 }
 
 @keyframes fadeIn {
