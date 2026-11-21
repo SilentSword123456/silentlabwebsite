@@ -9,7 +9,7 @@ export default function Home() {
 
     const handleCopy = async () => {
         try {
-            await navigator.clipboard.writeText("FFA500FF");
+            await navigator.clipboard.writeText("#FFA500");
             setIsCopied(true);
             setTimeout(() => setIsCopied(false), 2000);
         } catch (err) {
@@ -26,7 +26,16 @@ export default function Home() {
                 </p>
 
                 <p>
-                    My favorite color is <button onClick={handleCopy} className={styles.favoriteColorBtn}>Orange</button>
+                    My favorite color is {" "}
+                    <span className={"relative group"}>
+                        <span
+                            className={`group-hover:opacity-100 transition-opacity duration-500 ${isCopied ? "opacity-100" : "opacity-0"} absolute px-1 -top-6 left-1/2 -translate-x-1/2 bg-black border-amber-500 border rounded-full`}>
+                            {isCopied ? "Copied!" : "#FFA500"}
+                        </span>
+
+                        <button onClick={handleCopy} className={styles.favoriteColorBtn}>Orange</button>
+
+                    </span>
                 </p>
 
                 <p>
